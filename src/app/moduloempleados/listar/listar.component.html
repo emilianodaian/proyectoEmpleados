@@ -16,6 +16,7 @@
                     <td>{{ empleado.nombre }}</td>
                     <td>{{ empleado.correo }}</td>
                     <td><a class="btn btn-primary" routerLink="/editarempleado/{{ empleado.id }}">Modificar</a>  | 
+                        <a class="btn btn-danger" (click)="borrarRegistro(empleado.id,iControl)" role="button">Borrar</a>
                     </td>
                 </tr>
     
