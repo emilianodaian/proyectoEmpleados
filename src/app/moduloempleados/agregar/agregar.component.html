@@ -1,1 +1,24 @@
-<p>agregar works!</p>
+<div class="container-fluid">
+    <div class="mb-3">
+        <form [formGroup]="formularioempleado" (ngSubmit)="enviarInfo()" >
+            <!---->
+            
+       
+            <label for="" class="form-label">Agregar Empleado</label>
+            <input type="text" class="form-control" formControlName="id" name="" id="" aria-describedby="helpId"
+                placeholder="">
+            <small id="helpId" class="form-text text-muted">Ingrese ID</small>
+
+            <input type="email" class="form-control" formControlName="nombre" name="" id="" aria-describedby="helpId" placeholder="">
+            <small id="helpId" class="form-text text-muted">Ingrese Nombre</small>
+
+
+            <input type="email" class="form-control form-control-sm" formControlName="correo" name="" id="" aria-describedby="helpId"
+                placeholder="">
+            <small id="helpId" class="form-text text-muted">Ingrese Correo</small>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+    </div>
+</div>
