@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AgregarComponent } from './moduloempleados/agregar/agregar.component';
+import { EditarComponent } from './moduloempleados/editar/editar.component';
+import { ListarComponent } from './moduloempleados/listar/listar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AgregarComponent,
+    EditarComponent,
+    ListarComponent
   ],
   imports: [
     BrowserModule,
