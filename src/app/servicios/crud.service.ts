@@ -18,7 +18,7 @@ export class CrudService {
   }
 
   consultarEmpleado(){
-    return this.conexionservicio.get(this.API+"?listar=1");
+    return this.conexionservicio.get(this.API);
   }
 
 }
