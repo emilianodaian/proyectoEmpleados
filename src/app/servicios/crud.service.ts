@@ -17,17 +17,22 @@ export class CrudService {
     return this.conexionservicio.post(this.API+"?insertar=1",datosEmpleado);
   }
 
+  editarEmpleado(id:any,datosEmpleado:any):Observable<any>{
+    return this.conexionservicio.post(this.API+"?actualizar="+id,datosEmpleado);
+  }
+
   consultarEmpleado(){
     return this.conexionservicio.get(this.API);
   }
 
 
   borrarEmpleado(id:any):Observable<any>{
-    return this.conexionservicio.get(this.API+"?borrar=1",id);
+    return this.conexionservicio.get(this.API+"?borrar="+id);
   }
 
-  modificarEmpleado(id:any):Observable<any>{
-    return this.conexionservicio.get(this.API+"?actualizar=1",id);
-  }
+ 
 
+  obtenerEmpleado(id:any):Observable<any>{
+    return this.conexionservicio.get(this.API+"?consultar="+id);
+  }
 }

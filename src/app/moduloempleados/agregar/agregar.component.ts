@@ -18,7 +18,7 @@ export class AgregarComponent implements OnInit {
         nombre: [''],
         correo: ['']
       }
-    )
+    );
    }
 
   ngOnInit(): void {
