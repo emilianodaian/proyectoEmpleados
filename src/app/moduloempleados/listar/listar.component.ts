@@ -26,7 +26,7 @@ export class ListarComponent implements OnInit {
     console.log(id);
     console.log(iControl);
 
-    if(window.confirm("¿Está seguro que desea eliminar el empleado")){
+    if(window.confirm("¿Está seguro que desea eliminar el empleado?")){
       this.servicio.borrarEmpleado(id).subscribe(
         (respuesta)=>{
           this.Empleados.splice(iControl,1);
