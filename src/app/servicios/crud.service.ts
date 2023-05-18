@@ -15,7 +15,7 @@ export class CrudService {
 
   agregarEmpleado(datosEmpleado:empleados):Observable<any>{
     return this.conexionservicio.post(this.API+"?insertar=1",datosEmpleado);
-  }
+  }//https://institutequasar.com/apiBlog/categoria.php
 
   editarEmpleado(id:any,datosEmpleado:any):Observable<any>{
     return this.conexionservicio.post(this.API+"?actualizar="+id,datosEmpleado);
